@@ -1,0 +1,26 @@
+{
+  "name": "3-tool",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "time": "node -r ts-node/register --env-file=.env src/time.ts",
+    "order": "node -r ts-node/register --env-file=.env src/order.ts",
+    "flight": "node -r ts-node/register --env-file=.env src/flight.ts",
+    "index1": "node -r ts-node/register --env-file=.env src/index1.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "console-log-colors": "^0.5.0",
+    "openai": "^4.52.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}

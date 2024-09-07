@@ -1,0 +1,24 @@
+{
+  "name": "8-hugging-face",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "embed": "node -r ts-node/register --env-file=.env src/embed.ts",
+    "translate": "node -r ts-node/register --env-file=.env src/translate.ts",
+    "answer-question": "node -r ts-node/register --env-file=.env src/answer-question.ts",
+    "text-to-image": "node -r ts-node/register --env-file=.env src/text-to-image.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@huggingface/inference": "^2.8.0",
+    "@xenova/transformers": "^2.17.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}

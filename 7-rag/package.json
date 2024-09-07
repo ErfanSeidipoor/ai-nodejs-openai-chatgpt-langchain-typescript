@@ -1,0 +1,31 @@
+{
+  "name": "6-rag",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "basic": "node -r ts-node/register --env-file=.env src/basic.ts",
+    "web": "node -r ts-node/register --env-file=.env src/web.ts",
+    "pdf": "node -r ts-node/register --env-file=.env src/pdf.ts",
+    "pdf-chromadb": "node -r ts-node/register --env-file=.env src/pdf-chromadb.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@langchain/community": "^0.2.31",
+    "@langchain/core": "^0.2.31",
+    "@langchain/openai": "^0.2.5",
+    "cheerio": "^1.0.0",
+    "chromadb": "^1.8.1",
+    "console-log-colors": "^0.5.0",
+    "langchain": "^0.2.11",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
